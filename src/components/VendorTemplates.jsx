@@ -5,15 +5,15 @@ import logo from "../asstes/logo.png";
 const VendorTemplates = () => {
   return (
     <div>
-      <section class=" mx-3">
+      <section class="mb-4  ">
         <div class="container mx-auto md:flex flex-wrap py-4 mt-4  px-12 flex-col md:items-end ">
           <button class=" bg-black text-white border-0 py-2 px-8  md:mt-0 rounded-[30px] font-semibold">
             Contact Us
           </button>
         </div>
 
-        <div class="container lg:w-full mx-auto flex px-2 py-6 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 flex flex-col px-4 md:pr-12 md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div class="container lg:w-full mx-auto flex px-2 py-6 md:flex-row flex-col items-center ">
+          <div class="lg:flex-grow md:w-1/2 flex flex-col px-4 md:pr-12 md:items-start md:text-left mb-24  items-center text-center ">
             <h1 class="mb-4 font-bold ">Launching Soon...</h1>
             <span className="flex py-6">
               <h5 className="text-3xl ">Powered by </h5>
@@ -25,12 +25,9 @@ const VendorTemplates = () => {
               </button>
             </div>
           </div>
+          <div className="bannerBg ml-8 rounded-l-[130px]"></div>
           <div class="lg:w-2/3 md:w-2/3 ">
-            <img
-              class="object-cover object-center rounded "
-              alt="hero"
-              src={bannerimg}
-            />
+            <img class=" rounded" alt="hero" src={bannerimg} />
           </div>
         </div>
       </section>
