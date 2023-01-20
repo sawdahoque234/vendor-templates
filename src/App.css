@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  overflow: hidden;
 }
 
 h1 {
@@ -16,21 +15,21 @@ h1 {
     #fc767b 100%
   );
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 577px;
+  height: 600px;
   width: 590px;
   position: absolute;
   top: 0;
-
   z-index: -10;
   right: -0.1px;
-  transform: skew(0deg, 0deg, 5deg);
+  border-radius: 30% 0% 0% 50%;
+  /* border-radius: 20% 0% 0% 95%; */
+  /* transform: skew(3deg, 0deg); */
+  /* transform: rotateY(10deg); */
   overflow-x: hidden;
 }
 
 @media screen and (max-width: 600px) {
   .bannerBg {
-    background-image: white;
+    background-color: white;
   }
 }

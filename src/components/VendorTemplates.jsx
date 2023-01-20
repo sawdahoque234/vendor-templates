@@ -25,7 +25,8 @@ const VendorTemplates = () => {
               </button>
             </div>
           </div>
-          <div className="bannerBg ml-8 rounded-l-[130px]"></div>
+          {/* <div className="bannerBg  rounded-l-[120px]"></div> */}
+          <div className="bannerBg"></div>
           <div class="lg:w-2/3 md:w-2/3 ">
             <img class=" rounded" alt="hero" src={bannerimg} />
           </div>
