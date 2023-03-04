@@ -1,15 +1,64 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import bannerimg from "../asstes/bannerimg.png";
 import logo from "../asstes/logo.png";
+import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
+import { BiMap } from "react-icons/bi";
 const VendorTemplates = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <section class="mb-4  ">
         <div class="container mx-auto md:flex flex-wrap py-4 mt-4  px-12 flex-col md:items-end ">
-          <button class=" bg-black text-white border-0 py-2 px-8  md:mt-0 rounded-[30px] font-semibold">
+          <button
+            className="bg-black text-white active:bg-blue-500 
+     border-0 py-2 px-8  md:mt-0 rounded-[30px] font-semibold focus:outline-none mr-1 mb-1"
+            type="button"
+            onClick={() => setShowModal(true)}
+          >
             Contact Us
           </button>
+
+          {showModal ? (
+            <>
+              <div className="flex  overflow-x-hidden overflow-y-auto fixed  z-50 outline-none focus:outline-none">
+                <div className="relative w-auto my-2 mx-auto">
+                  <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                    <div className="flex items-start justify-between p-6 border-b border-solid border-gray-300 rounded-t ">
+                      <h3 className="text-2xl">Let's Know</h3>
+                      <button
+                        className="bg-transparent border-0 text-black float-right"
+                        onClick={() => setShowModal(false)}
+                      >
+                        <span className="text-black opacity-7 h-7 w-6 text-xl block bg-green-400 py-0  rounded-full">
+                          x
+                        </span>
+                      </button>
+                    </div>
+                    <div className="p-4">
+                      <p>
+                        <span className="flex items-start p-2">
+                          <BsFillTelephoneFill className=" mt-1 mx-1" />{" "}
+                          +97145830141
+                        </span>
+                      </p>
+                      <p>
+                        <span className="flex items-start p-2">
+                          <BsWhatsapp className=" mt-1 mx-1" /> +971504630141
+                        </span>
+                      </p>
+                      <p>
+                        <span className="flex items-start p-2">
+                          <BiMap className=" mt-1 mx-1" /> Premise EO 15, Floor
+                          1, In5 Tech Building. DIC, Dubai
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          ) : null}
         </div>
 
         <div class="container lg:w-full mx-auto flex px-2 py-6 md:flex-row flex-col items-center ">
@@ -19,11 +68,6 @@ const VendorTemplates = () => {
               <h5 className="text-3xl ">Powered by </h5>
               <img src={logo} alt="" className="w-[35%] h-[35%] mx-2 mt-2" />
             </span>
-            <div class="flex justify-center">
-              <button class="inline-flex text-white bg-[#ED636E] border-0 py-2 mt-2 px-6 focus:outline-none rounded-[30px] font-[24px]">
-                Sign Up
-              </button>
-            </div>
           </div>
           {/* <div className="bannerBg  rounded-l-[120px]"></div> */}
           <div className="bannerBg"></div>
