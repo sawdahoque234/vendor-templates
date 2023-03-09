@@ -9,10 +9,10 @@ const VendorTemplates = () => {
   return (
     <div className="example">
       <section class="mb-4  ">
-        <div class="container mx-auto md:flex flex-wrap md:py-4 md:mt-4  md:px-12 px-10 flex-col items-end bnrbtn">
+        <div class="container mx-auto md:flex flex-wrap md:py-4 md:mt-4  md:px-12 px-10 pt-0 flex-col items-end bnrbtn">
           <button
             className="bg-black text-white active:bg-blue-500 
-     border-0 py-2 px-8  md:mt-0 rounded-[30px] font-semibold focus:outline-none mr-1 mb-1"
+          border-0 md:py-2 py-1 md:px-8 px-4  md:mt-0 rounded-[30px] md:font-semibold focus:outline-none mr-1 mb-1"
             type="button"
             onClick={() => setShowModal(true)}
           >
@@ -21,10 +21,10 @@ const VendorTemplates = () => {
 
           {showModal ? (
             <>
-              <div className="flex  overflow-x-hidden overflow-y-auto fixed  z-50 outline-none focus:outline-none">
-                <div className="relative w-auto my-2 mx-auto ">
+              <div className="flex  overflow-x-hidden overflow-y-auto   z-50 outline-none focus:outline-none fixed">
+                <div className="relative w-auto  mx-auto  ">
                   <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white">
-                    <div className="flex items-start justify-between md:p-6 border-b border-solid border-gray-300  rounded-t ">
+                    <div className="flex items-start justify-between md:p-6 p-1 border-b border-solid border-gray-300  rounded-t ">
                       <h3 className="text-xl font-medium">Let's Know</h3>
                       <button
                         className="bg-transparent border-0 text-black float-right"
@@ -35,7 +35,7 @@ const VendorTemplates = () => {
                         </span>
                       </button>
                     </div>
-                    <div className="md:p-4">
+                    <div className="md:p-4 md:block flex flex-wrap">
                       <p>
                         <span className="flex items-start md:p-2">
                           <BsFillTelephoneFill className=" mt-1 mx-1 text-blue-600" />{" "}
@@ -48,6 +48,7 @@ const VendorTemplates = () => {
                           +971504630141
                         </span>
                       </p>
+
                       <p>
                         <span className="flex items-start md:p-2">
                           <BiMap className=" mt-1 mx-1 text-emerald-400" />{" "}
@@ -73,9 +74,9 @@ const VendorTemplates = () => {
             <h1 class="md:mb-4 font-bold bnrtitle mx-6 md:mx-0">
               Launching Soon...
             </h1>
-            <span className="flex md:py-6 py-12 bnrSpn">
-              <h5 className="md:text-3xl text-2xl ">Powered by </h5>
-              <img src={logo} alt="" className="w-[35%] h-[35%] mx-2 mt-2" />
+            <span className="flex md:py-6 py-10 bnrSpn">
+              <h5 className="md:text-3xl text-xl ">Powered by </h5>
+              <img src={logo} alt="" className="w-[35%] h-[35%] mx-2 mt-1" />
             </span>
           </div>
           <div className="bannerBg"></div>

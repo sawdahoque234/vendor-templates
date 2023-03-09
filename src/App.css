@@ -32,7 +32,7 @@ h1 {
     overflow: hidden;
   }
   h1 {
-    font-size: 70px;
+    font-size: 50px;
     text-align: start;
   }
 
@@ -44,32 +44,30 @@ h1 {
   }
 
   .bnrimg {
-    top: 250px;
-    position: absolute;
+    top: 190px;
+    position: fixed;
   }
   .bannerbg {
     background-image: linear-gradient(#e55971 0%, #ee6475 60%, #fc767b 100%);
     background-repeat: no-repeat;
-    height: 350px;
-    width: 300px;
+    height: 280px;
+    width: 260px;
     position: fixed;
     z-index: -10;
     right: 0;
-    top: 240px;
+    top: 190px;
     border-radius: 30% 0% 0% 40%;
   }
   .bnrtitle {
     position: absolute;
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .bnrbtn {
     position: absolute;
-    margin-top: 690px;
-    /* align-items: start; */
-    /* display: flex; */
+    margin-top: 527px;
   }
   .bnrSpn {
     position: absolute;
-    margin-top: 580px;
+    margin-top: 440px;
   }
 }
