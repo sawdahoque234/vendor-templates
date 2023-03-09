@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
-
 h1 {
-  font-size: 80px;
+  font-size: 75px;
   line-height: 85px;
 }
 
@@ -22,14 +23,34 @@ h1 {
   z-index: -10;
   right: -0.1px;
   border-radius: 30% 0% 0% 50%;
-  /* border-radius: 20% 0% 0% 95%; */
-  /* transform: skew(3deg, 0deg); */
-  /* transform: rotateY(10deg); */
+
   overflow-x: hidden;
 }
 
-/* @media screen and (max-width: 600px) {
-  .bannerBg {
-    background-color: white;
+@media screen and (max-width: 700px) {
+  .example {
+    overflow: hidden;
   }
-} */
+  h1 {
+    font-size: 55px;
+    text-align: start;
+  }
+
+  h5 {
+    text-align: start;
+  }
+  .bannerBg {
+    background-image: linear-gradient(white, white);
+  }
+  .bannerbg {
+    background-image: linear-gradient(#e55971 0%, #ee6475 60%, #fc767b 100%);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 300px;
+    position: fixed;
+    z-index: -10;
+    right: 0;
+    bottom: 0;
+    border-radius: 30% 0% 0% 40%;
+  }
+}
