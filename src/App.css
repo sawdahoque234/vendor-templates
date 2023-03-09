@@ -32,7 +32,7 @@ h1 {
     overflow: hidden;
   }
   h1 {
-    font-size: 55px;
+    font-size: 70px;
     text-align: start;
   }
 
@@ -42,6 +42,11 @@ h1 {
   .bannerBg {
     background-image: linear-gradient(white, white);
   }
+
+  .bnrimg {
+    top: 250px;
+    position: absolute;
+  }
   .bannerbg {
     background-image: linear-gradient(#e55971 0%, #ee6475 60%, #fc767b 100%);
     background-repeat: no-repeat;
@@ -50,7 +55,21 @@ h1 {
     position: fixed;
     z-index: -10;
     right: 0;
-    bottom: 0;
+    top: 240px;
     border-radius: 30% 0% 0% 40%;
+  }
+  .bnrtitle {
+    position: absolute;
+    margin-top: 30px;
+  }
+  .bnrbtn {
+    position: absolute;
+    margin-top: 690px;
+    /* align-items: start; */
+    /* display: flex; */
+  }
+  .bnrSpn {
+    position: absolute;
+    margin-top: 580px;
   }
 }
